@@ -1,15 +1,47 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
+			"path": "pages/index/index"
+		},
+        {
+            "path": "pages/index/service"
+        },
+        {
+            "path": "pages/index/reslist",
+            "style" :
+            {
+                "navigationBarTitleText": "资源说明",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path" : "pages/math/math",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "数学",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#F8F8F8",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "售货机",
+            "iconPath": "static/img/home.png"
+        }, {
+            "pagePath": "pages/index/service",
+            "text": "客服",
+            "iconPath": "static/img/service.png"
+        }]
+    },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "快乐苏打水",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
