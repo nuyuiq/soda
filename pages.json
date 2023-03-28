@@ -18,7 +18,7 @@
             "path" : "pages/math/math",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "数学",
+                "navigationBarTitleText": "心算",
                 "enablePullDownRefresh": false
             }
             

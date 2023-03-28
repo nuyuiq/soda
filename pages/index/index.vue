@@ -8,15 +8,10 @@
 </template>
 
 <script>
+    import applist from '../applist.js'
     export default {
         data() {
-            return {
-                apps: [{
-                    name: '1+2',
-                    url: '/pages/math/math',
-                    img: '/static/img/0.png'
-                }]
-            }
+            return { apps: applist }
         },
         methods: {
             goto(app) {
@@ -49,7 +44,7 @@
     .img {
         width: 100%;
         height: calc(100vw / 3 - 90rpx);
-        border: 1rpx solid lightgray;
+        border: 4rpx solid lightgray;
         border-radius: 25%;
     }
     .txt {
